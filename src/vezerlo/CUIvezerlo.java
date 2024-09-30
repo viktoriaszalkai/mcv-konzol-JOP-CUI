@@ -1,15 +1,16 @@
+
 package vezerlo;
 
 import modell.JatekModell;
 import nezet.CUInezet;
 
 
-
-public class KonzolVezerlo {
+public class CUIvezerlo {
+    
     private JatekModell modell;
     private CUInezet nezet;
 
-    public KonzolVezerlo(JatekModell modell, CUInezet nezet) {
+    public CUIvezerlo(JatekModell modell, CUInezet nezet) {
         this.modell = modell;
         this.nezet = nezet;
         
@@ -21,7 +22,5 @@ public class KonzolVezerlo {
        modell.setValasztas(nezet.bekeres());
        nezet.megjelenit(modell.ellenorzes());
     }
-    
-    
 }
 
